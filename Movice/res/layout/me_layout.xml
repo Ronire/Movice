@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lv="http://schemas.android.com/apk/res/com.lv.movice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+   
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/Re_me_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D43E37" >
+
+            <ImageView
+                android:id="@+id/defaulthead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/oc_meitu_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/defaulthead"
+                android:text="立即登陆"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/s5" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/topimagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Re_me_top"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vi"
+                lv:text="想看" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vf"
+                lv:text="看过" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/va"
+                lv:text="影评" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vh"
+                lv:text="话题" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/white1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/topimagelayout" />
+
+        <com.lv.MyView.TextArrow
+            android:id="@+id/oder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white1"
+            android:background="#FFFFFF"
+            lv:arrow="@drawable/s4"
+            lv:message="全部"
+            lv:title="我的订单" />
+
+        <View
+            android:id="@+id/white2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/oder" />
+        <!-- ########### -->
+
+        <LinearLayout
+            android:id="@+id/betweenimagelauout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white2"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vo"
+                lv:text="未消费" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vn"
+                lv:text="待付款" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vm"
+                lv:text="待评价" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f1f1f1" />
+
+            <com.lv.MyView.TopImageLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                lv:src="@drawable/vk"
+                lv:text="退款" />
+        </LinearLayout>
+        <!-- ##### -->
+
+        <View
+            android:id="@+id/white3"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/betweenimagelauout" />
+
+        <LinearLayout
+            android:id="@+id/mymessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white3"
+            android:orientation="vertical" >
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:title="我的消息" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:title="会员中心" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:title="我的成就" />
+        </LinearLayout>
+        <!-- ######## -->
+
+        <View
+            android:id="@+id/white4"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/mymessage" />
+
+        <LinearLayout
+            android:id="@+id/mymoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white4"
+            android:orientation="vertical" >
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:title="优惠券" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:message="余额 ：0"
+                lv:title="我的钱包" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.lv.MyView.TextArrow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                lv:arrow="@drawable/s4"
+                lv:title="商场" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/white5"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/mymoney" />
+
+        <com.lv.MyView.TextArrow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/white5"
+            android:background="#FFFFFF"
+            lv:arrow="@drawable/s4"
+            lv:title="设置" />
+    </RelativeLayout>
+
+</ScrollView>

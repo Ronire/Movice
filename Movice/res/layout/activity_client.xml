@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lv.activity.ClientActivity" >
+
+   
+
+        <LinearLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:id="@+id/Tv_movice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/movice_select"
+                android:text="电影"
+                android:textColor="#817F7F"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- ####### -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:id="@+id/Tv_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/cinema_select"
+                android:text="影院"
+                android:textColor="#817F7F"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!-- ####### -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:id="@+id/Tv_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/find_select"
+                android:text="发现"
+                android:textColor="#817F7F"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!-- ####### -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:id="@+id/Tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/me_select"
+                android:text="我的"
+                android:textColor="#817F7F"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
